@@ -50,6 +50,28 @@ export default function App() {
 
   const addKRObjective = filteredObjectives.find(o => o.id === addKRForObjectiveId) ?? null;
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-ink-950 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-8 h-8 border-2 border-amber-400 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+          <p className="text-ink-400 text-sm font-mono">Loading objectives...</p>
+        </div>
+      </div>
+    );
+  }
+  
+  if (error) {
+    return (
+      <div className="min-h-screen bg-ink-950 flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-rose-400 text-sm font-mono">Error: {error}</p>
+          <p className="text-ink-500 text-xs mt-2">Check your Supabase environment variables in Vercel.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-ink-950 text-ink-100 font-body">
       {/* Noise texture overlay */}
