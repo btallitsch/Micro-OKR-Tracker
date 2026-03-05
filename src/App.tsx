@@ -16,6 +16,8 @@ export default function App() {
     filteredObjectives,
     activeQuarter,
     activeYear,
+    loading,
+    error,
     addObjective,
     deleteObjective,
     addKeyResult,
