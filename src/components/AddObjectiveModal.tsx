@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Modal } from './Modal';
-import type { CreateObjectiveInput, ObjectiveColor, Quarter } from '../types';
+import type { CreateObjectiveInput, Quarter } from '../types';
 import { OBJECTIVE_COLORS, COLOR_MAP } from '../utils';
 
 interface AddObjectiveModalProps {
