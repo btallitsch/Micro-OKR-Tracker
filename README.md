@@ -2,6 +2,8 @@
 
 A lightweight, local-first OKR (Objectives & Key Results) tracker built with React, TypeScript, and Tailwind CSS.
 
+See it in action here: https://micro-okr-tracker.vercel.app/
+
 ---
 
 ## Features
